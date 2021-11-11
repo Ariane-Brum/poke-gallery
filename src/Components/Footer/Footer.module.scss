@@ -1,0 +1,31 @@
+.footer {
+  background: var(--bg-header);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  gap: 10px;
+
+  p {
+    color: var(--white);
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  .icons {
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}

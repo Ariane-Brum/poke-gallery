@@ -1,0 +1,54 @@
+.tabs {
+  display: flex;
+
+  .tab {
+    padding: 0.9375rem;
+    text-align: center;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1rem;
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(0, 0, 0, 0.274);
+    }
+  }
+
+  .activeTabs {
+    background: var(--white);
+    border-bottom: 1px solid transparent;
+    color: var(--text-color);
+    font-weight: bold;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 5px;
+      background: var(--bg-header);
+    }
+  }
+}
+
+.contentTabs {
+  flex-grow: 1;
+}
+
+@media (max-width: 37.5rem) {
+  .tabs {
+    .tab {
+      font-size: 0.875rem;
+      padding: 0.625rem;
+    }
+  }
+}

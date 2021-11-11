@@ -1,0 +1,51 @@
+section {
+  .button {
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.4rem;
+    background: var(--bg-header);
+    color: var(--white);
+    min-width: 8rem;
+    padding: 0.8rem 1rem;
+    position: relative;
+    transition: 0.1s;
+    margin-top: 0.75rem;
+    left: 45px;
+    margin-bottom: 2rem;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px #fea, 0 0 0 4px var(--bg-color);
+    }
+  }
+}
+
+.pokeList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13rem;
+  margin-bottom: 1rem;
+  gap: 1.5625rem;
+  padding: 0.9375rem;
+}
+
+.pokeCardFound {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  gap: 1.5625rem;
+  padding: 0.9375rem;
+}
+
+@media (max-width: 37.5rem) {
+  .pokeList {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,256 @@
+.evolution {
+  margin: 1.875rem 3.75rem;
+  overflow: hidden;
+
+  h1 {
+    margin-bottom: 0.625rem;
+    font-size: 1.875rem;
+    display: inline-block;
+  }
+
+  .evolutionList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.625rem;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .evolutionWrapper {
+      position: relative;
+
+      &:not(:last-child)::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+
+        left: 180px;
+        top: 65px;
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid var(--text-color);
+      }
+
+      .evolutionItem {
+        padding: 1rem;
+        border-radius: 50%;
+        border: 5px solid rgba(0, 0, 0, 0.274);
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    .evolutionInfo {
+      margin-top: 1.5625rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+
+      h3 {
+        font-size: 1.3125rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.multipleEvolutions {
+  .evolutions {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.25rem 1.5625rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .mainPokemon {
+      width: 166px;
+      height: 188px;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+
+      .evolutionsWrapper {
+        h5 {
+          text-transform: capitalize;
+          padding-top: 0.3125rem;
+          text-align: center;
+        }
+
+        .evolutionsImg {
+          border-radius: 50%;
+          border: 5px solid rgba(0, 0, 0, 0.274);
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+
+    .item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.625rem;
+        left: -24px;
+        top: 68px;
+        position: absolute;
+        border-top: 0.625rem solid transparent;
+        border-bottom: 0.625rem solid transparent;
+        border-left: 0.625rem solid var(--text-color);
+      }
+
+      h5 {
+        text-transform: capitalize;
+        padding: 0.3125rem 0 1.125rem 0;
+      }
+
+      .evolImg {
+        border-radius: 50%;
+        border: 5px solid rgba(0, 0, 0, 0.274);
+        margin-right: 1rem;
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 64.6875rem) {
+  // 1035px
+  .evolution {
+    .evolutionList {
+      margin: 1.875rem 0px;
+
+      .evolutionWrapper {
+        &:not(:last-child)::before {
+          content: "";
+          left: 170px;
+          top: 65px;
+        }
+      }
+    }
+  }
+
+  .multipleEvolutions {
+    .evolutions {
+      padding: 0;
+    }
+    margin: 1.875rem 2.5rem;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 54.9375rem) {
+  // 879px
+  .evolution {
+    .evolutionList {
+      gap: 1.5rem;
+      .evolutionWrapper {
+        &:not(:last-child)::before {
+          content: "";
+          left: 164px;
+          top: 70px;
+        }
+      }
+    }
+  }
+
+  .multipleEvolutions {
+    .evolutions {
+      padding: 0;
+    }
+    margin: 1.875rem 1.5625rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  // 768px
+  .evolution {
+    .evolutionList {
+      .evolutionWrapper {
+        &:not(:last-child)::before {
+          content: "";
+          left: 167px;
+          top: 65px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 40.625rem) {
+  // 650px
+  .evolution {
+    .evolutionList {
+      flex-direction: column;
+      .evolutionWrapper {
+        &:not(:last-child)::before {
+          content: "";
+          left: 70px;
+          top: 214px;
+          transform: rotate(90deg);
+        }
+      }
+
+      .evolutionInfo {
+        margin-bottom: 1.25rem;
+        margin-top: 0.625rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 26.5625rem) {
+  // 425px
+  .evolution {
+    margin: 1.875rem 1.875rem;
+    h1 {
+      font-size: 1.3125rem;
+      margin-bottom: 0px;
+    }
+    .evolutionList {
+      margin: 1.25rem 0px 0.625rem 0;
+      .evolutionWrapper {
+        &:not(:last-child)::before {
+          content: "";
+          left: 66px;
+          top: 214px;
+          transform: rotate(90deg);
+        }
+      }
+
+      .evolutionInfo {
+        margin-bottom: 1.25rem;
+        margin-top: 0.625rem;
+      }
+    }
+  }
+  .multipleEvolutions {
+    .evolutions {
+      .item {
+        h5 {
+          margin-right: 1.3125rem;
+        }
+
+        &::before {
+          left: 66px;
+          top: -31px;
+          transform: rotate(90deg);
+        }
+      }
+
+      .evolutionsWrapper {
+        h5 {
+          margin-right: 0.625rem;
+        }
+      }
+    }
+  }
+}

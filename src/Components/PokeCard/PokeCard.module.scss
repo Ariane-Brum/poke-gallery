@@ -1,0 +1,105 @@
+.pokeCard {
+  border: 1px solid var(--bg-header);
+  font-size: 1.25rem;
+  background: linear-gradient(
+    180deg,
+    rgba(182, 0, 13, 1) 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(234, 151, 242, 1) 100%,
+    rgba(246, 185, 233, 1) 100%
+  );
+  list-style: none;
+  padding: 1.875rem;
+  color: var(--bg-header);
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+
+  cursor: pointer;
+
+  img {
+    height: 180px;
+    width: 180px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 45%;
+    height: 40%;
+    border-radius: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    border: 17px solid #000;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 17px;
+
+    background-color: black;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  div {
+    margin-top: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      margin-right: 0.3125rem;
+    }
+
+    p {
+      text-transform: capitalize;
+      text-decoration: underline;
+    }
+  }
+  &:hover {
+    animation: jelloHorizontal 0.9s both;
+  }
+}
+
+@keyframes jelloHorizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .pokeCard {
+    &::before {
+      top: 49%;
+    }
+  }
+}

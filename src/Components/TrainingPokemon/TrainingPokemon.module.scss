@@ -1,0 +1,33 @@
+.training {
+  .trainingInfo {
+    width: 75%;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.375rem 1.5625rem;
+      color: var(--white);
+      margin: 0.3125rem 0px;
+      border-radius: 0.3125rem;
+      border: 0.3125rem solid rgba(0, 0, 0, 0.274);
+    }
+  }
+}
+
+@media (max-width: 64.6875rem) {
+  .training {
+    .trainingInfo {
+      width: 100%;
+      max-width: 85%;
+    }
+  }
+}
+
+@media (max-width: 52.5625rem) {
+  .training {
+    .trainingInfo {
+      max-width: 100%;
+    }
+  }
+}

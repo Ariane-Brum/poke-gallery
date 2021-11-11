@@ -1,0 +1,59 @@
+.pokemon {
+  width: 100%;
+  padding: 1.875rem;
+  overflow: hidden;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.pokemonWrapper {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  margin-top: 10rem;
+  position: relative;
+  align-content: center;
+  height: 100%;
+  background: var(--white);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  border-radius: 0.375rem;
+
+  .tabsWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 64.6875rem) {
+  // 1035px
+  .pokemonWrapper {
+    width: 80%;
+    margin: 10rem auto auto auto;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 52.5625rem) {
+  // 841
+  .pokemonWrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 26.5625rem) {
+  // 425
+  .pokemonWrapper {
+    border-radius: 0.375rem;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  // 375
+  .pokemonWrapper {
+    width: 100%;
+    margin: 8rem auto auto auto;
+    border-radius: 0.375rem;
+    overflow: hidden;
+  }
+}

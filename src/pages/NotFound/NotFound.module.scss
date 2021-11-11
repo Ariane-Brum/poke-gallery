@@ -1,0 +1,24 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 500px;
+    margin-top: 13rem;
+    margin-bottom: 1rem;
+  }
+
+  .notFoundText {
+    position: relative;
+    left: 66px;
+    display: grid;
+    justify-items: center;
+    h1 {
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.statsBar {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 1rem 0;
+  height: 1.75rem;
+  left: -40px;
+  width: 26.4375rem;
+}
+
+.statsDone {
+  border-radius: 1.25rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+  transition-delay: 0.8s;
+}
+
+@media (max-width: 77.1875rem) {
+  .statsBar {
+    grid-column: 2;
+    width: 28.125rem;
+    left: 0;
+  }
+}
+
+@media (max-width: 52.5625rem) {
+  .statsBar {
+    grid-column: 2;
+    width: 21.875rem;
+    left: 0;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .statsBar {
+    grid-column: 2;
+    width: 14.25rem;
+    left: 0;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  .statsBar {
+    grid-column: 2;
+    width: 12.375rem;
+    left: 0;
+    margin: 0.75rem 0;
+    height: 1.5rem;
+  }
+}
