@@ -38,7 +38,7 @@
 
 - [x] **Efeito no cartão do pokémon**: Criar uma animação ao usuário com efeito hover no cartão do pokémon.
 
-- [x] **Selecionar pokémon**: Criar uma página na aplicação com mais detalhes sobre o pokémon escolhido.
+- [x] **Selecionar pokémon**: Criar uma página na aplicação com mais detalhes sobre o pokémon escolhido. Essa página mudará de cor, conforme o tipo do pokemon selecionado. Exemplo: pokemon do type Fire, sua página será vermelha.
 
 - [x] **NavTabs para navegar entre as seções**: - [Stats] - [Biografy] - [Evolution].
 
